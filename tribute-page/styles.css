@@ -1,0 +1,27 @@
+body { text-align: center; }
+h1 { font-size: 3rem; }
+#main { 
+  background-color: #e6e6e6; 
+  border-radius: 5px;
+}
+#img-div {
+  background-color: white;
+  border-radius: 5px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin: 0 auto;
+  width: 95%;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#tribute-info {
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  margin: 0 auto;
+  text-align: left;
+  width: 50%;
+}
