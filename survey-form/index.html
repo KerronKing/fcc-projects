@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Survey Form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Gamer's Survey</h1>
+    <p id="description">
+      Thanks for your time in completing this short gamers' survey
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name:</label><br/>
+        <input
+          name="name"
+          class="input-styler"
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <label id="email-label">Email:</label><br/>
+        <input
+          name="email"
+          class="input-styler"
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <label id="number-label">Age:</label><br/>
+        <input
+          name="name"
+          class="input-styler"
+          type="number"
+          id="number"
+          min="0"
+          max="200"
+          placeholder="Enter your age"
+          required
+        /><br />
+      </fieldset>
+      <fieldset>
+        <label>Select your favourite game genre:</label><br/>
+        <select id="dropdown">
+          <option selected="selected" disabled>Select a category</option>
+          <option value="sports">sports</option>
+          <option value="strategy">strategy</option>
+          <option value="fighting">fighting</option>
+          <option value="rpg">rpg</option>
+          <option value="platform">platform</option>
+          <option value="action">action</option>
+          <option value="adventure">adventure</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label>Which is your favourite console:</label><br/>
+        <input type="radio" name="console" value="Xbox One"/>
+        <label>Xbox One</label><br/>
+        <input type="radio" name="console" value="PS4"/>
+        <label>PS4</label><br/>
+        <input type="radio" name="console" value="Nintendo Switch"/>
+        <label>Nintendo Switch</label><br/>
+        <input type="radio" name="console" value="Nintendo 2DS XL"/>
+        <label>Nintendo 2DS XL</label><br/>
+      </fieldset>
+      <fieldset>
+        <label>Select your favourite game company:</label><br/>
+        <input type="checkbox" name="console" value="EA"/>
+        <label>EA</label><br/>
+        <input type="checkbox" name="console" value="Ubisoft"/>
+        <label>Ubisoft</label><br/>
+        <input type="checkbox" name="console" value="Nintendo"/>
+        <label>Nintendo</label><br/>
+        <input type="checkbox" name="console" value="Rockstar"/>
+        <label>Rockstar</label><br/>
+        <input type="checkbox" name="console" value="Valve"/>
+        <label>Valve</label><br/>
+        <input type="checkbox" name="console" value="Activision"/>
+        <label>Activision</label><br/>
+        <input type="checkbox" name="console" value="Ubisoft"/>
+        <label>Ubisoft</label><br/>
+      </fieldset>
+      <fieldset>
+        <label>Tell us your favourite game and gaming moment:</label><br/>
+        <textarea>Tell us your story</textarea>
+      </fieldset>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
