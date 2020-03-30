@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Product Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <img
+          src="https://img.icons8.com/nolan/64/melchior-king-magician.png"
+          id="header-img"
+          alt="king guitar icon"
+        />
+        <ul>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#shop" class="nav-link">Shop</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>King's Guitars</h1>
+
+      <form
+        id="form"
+        method="POST"
+        action="https://www.freecodecamp.com/email-submit"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        /><br />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+
+      <div class="vid">
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Hyltln-KP0A"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div id="about" class="sections">
+        <h2>About</h2>
+        <p>
+          Eastablished in 2020, King's guitar is your one stop shop for all your
+          shredding needs.
+        </p>
+      </div>
+
+      <div id="shop" class="sections">
+        <h2>Shop</h2>
+        <div class="showcase">
+          <div class="shop-item">
+            <h3>Electric Guitars</h3>
+            <img
+              src="https://i.pinimg.com/originals/fe/fb/9f/fefb9f18ef6074a08c96f99d5f98f91f.jpg"
+              alt="guitars"
+              width="250"
+              height="350"
+            />
+            <button>Shop now</button>
+          </div>
+          <div class="shop-item">
+            <h3>Bass Guitars</h3>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/61yV75f-ucL._AC_SX425_.jpg"
+              alt="guitars"
+              width="250"
+              height="350"
+            />
+            <button>Shop now</button>
+          </div>
+          <div class="shop-item">
+            <h3>Accessories</h3>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/71KoqIKJwFL._AC_SX425_.jpg"
+              alt="guitars"
+              width="250"
+              height="350"
+            />
+            <button>Shop now</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer id="contact">
+      <img src="https://img.icons8.com/nolan/64/facebook-new.png" />
+      <img src="https://img.icons8.com/nolan/64/tumblr.png" />
+      <img src="https://img.icons8.com/nolan/64/instagram-new.png" />
+      <img src="https://img.icons8.com/nolan/64/pinterest.png" />
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
