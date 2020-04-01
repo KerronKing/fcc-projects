@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Technical Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Ruby Floats</header>
+      <a href="#Arithmetic_Operations" class="nav-link"
+        >Arithmetic Operations</a
+      >
+      <a href="#2nd_Section" class="nav-link">2nd Section</a>
+      <a href="#3rd_Section" class="nav-link">3rd Section</a>
+      <a href="#4th_Section" class="nav-link">4th Section</a>
+      <a href="#5th_Section" class="nav-link">5th Section</a>
+      <a href="#Constants" class="nav-link">Constants</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Arithmetic_Operations">
+        <header>Arithmetic Operations</header>
+        <p>
+          In Ruby, Float class is a subclass of Numeric class. The objects of
+          the Float class represents real numbers using the native
+          architecture’s double- precision floating-point representation. Public
+          Instance Methods Arithmetic Operations: This method perform various
+          arithmetic operations on float.
+        </p>
+
+        <p>
+          <span>Addition</span>: It returns the result of the sum of float and
+          numeric value in floating-point number.
+        </p>
+        <code>float + numeric</code>
+        <p>
+          <span>Subtraction</span>: It returns the result of diffrence of float
+          and numeric value in floating-point number.
+        </p>
+        <code>float - numeric</code>
+        <p>
+          <span>Multiplication</span>: It returns the result of product of float
+          and numeric value in floating-point number.
+        </p>
+        <code>float * numeric</code>
+        <p>
+          <span>Division</span>: It returns the result of division of float and
+          numeric value in floating-point number.
+        </p>
+        <code>float / numeric</code>
+        <p>
+          <span>Modulo</span>: It returns the result of the modulo of float and
+          numeric value in floating-point number.
+        </p>
+        <code>float % numeric</code>
+        <p>
+          <span>Exponent</span>: It returns the result of power of float and
+          numeric value in floating-point number.
+        </p>
+        <code>float ** numeric</code>
+        <p><span>Unary minus</span>: It returns floating-point number.</p>
+        <code>float -@</code>
+      </section>
+      <section class="main-section" id="2nd_Section">
+        <header>2nd Section</header>
+        <p>
+          <span><=></span> : This method returns -1, 0, or +1 depends upon
+          float. If float is less then numeric value then it will return -1, if
+          float is equal to numeric value, then it will returns 0, or if float
+          is greater then numeric value, then it will return +1.
+          <code>float <=> numeric --> 1, 0, +1</code>
+        </p>
+        <p>
+          <span>==</span>: This method returns true if the obj is equal to float
+          otherwise it returns false.
+        </p>
+        <code>float == obj --> true or false</code>
+        <p><span>abs</span>: This method return absolute value of float.</p>
+        <code>float.abs --> numeric</code>
+        <p>
+          <span>ceil</span>: This method returns the smallest Integer greater
+          than or equal to float. The return type of this method is int.
+        </p>
+        <code>float.ceil --> int</code>
+        <p>
+          <span>divmod</span>: This method will return an array that contains
+          the quotient and modulus obtained by dividing num by numeric.
+        </p>
+        <code>float.divmod(numeric) --> array</code>
+      </section>
+      <section class="main-section" id="3rd_Section">
+        <header>3rd Section</header>
+        <p>
+          <span>eql?</span>: This method check if the obj is Float and contains
+          the same value as in float. If they contains same value then it will
+          return true, otherwise return false. The return type of this method is
+          boolean.
+        </p>
+        <code>float.eql?(obj) --> true or false</code>
+        <p>
+          <span>finite?</span>: This method check if the float is a valid IEEE
+          floating-point number. If float is valid IEEE floating-point number
+          then it will return true otherwise it will return false.
+        </p>
+        <code>float.finite? --> true or false</code>
+        <p>
+          <span>floor</span>: This method returns largest integer less than or
+          equal to float.
+        </p>
+        <code>float.floor --> int</code>
+        <p>
+          <span>infinite?</span>: This method returns nil, -1, or +1 it depends
+          upon float. If float is finite, then it return nil, if float is
+          -infinte, then it return -1, or if float is +infinte then it return
+          +1.
+        </p>
+        <code>float.infinite? --> nil, -1, +1</code>
+      </section>
+      <section class="main-section" id="4th_Section">
+        <header>4th Section</header>
+        <p><span>modulo</span>: This method is similar to Float#% method.</p>
+        <code>float.modulo(numeric) --> numeric</code>
+        <p>
+          <span>nan?</span>: This method return true if float is an invalid IEEE
+          floating-point number otherwise it return false. The return type of
+          this method is boolean.
+        </p>
+        <code>float.nan? --> true or false</code>
+        <p>
+          <span>round</span>: This method rounds off float to the nearest
+          integer value. The return type of this method is int.
+        </p>
+        <code>float..round(digits=0) --> numeric</code>
+        <p><span>to_f</span>: This method return float.</p>
+        <code>float.to_f --> float</code>
+        <p>
+          <span>to_i</span>: This method return float truncate to the integer.
+          The return type of this method is int.
+        </p>
+        <code>float.to_i --> int</code>
+      </section>
+      <section class="main-section" id="5th_Section">
+        <header>5th Section</header>
+        <p><span>to_int</span>: This method is similar to Float#to_i.</p>
+        <code>float.to_int --> int</code>
+        <p>
+          <span>to_s</span>: This method returns a string that contains a
+          representation of self, as well as a fixed or exponential form of
+          numbering. The call may return NaN, infinity and -infinity.
+        </p>
+        <code>float.to_s --> string </code>
+        <p>
+          <span>truncate</span>: This method is equal to Float#to_i method. The
+          return type of this method is int.
+        </p>
+        <code>float.truncate </code>
+        <p>
+          <span>zero?</span>: This method return true if float is 0.0 otherwise
+          return false. The return type of this method is boolean.
+        </p>
+        <code>float.zero? --> true or false</code>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <ul>
+          <li>
+            <span>DIG: </span> It holds minimum number of significant decimal
+            digits in a double-precision floating point and it defaults to 15.
+          </li>
+          <li>
+            <span>EPSILON: </span> It holds difference between 1 and the
+            smallest double-precision floating point number greater than 1 and
+            defaults to 2.2204460492503131e-16.
+          </li>
+          <li>
+            <span>MANT_DIG: </span> It holds the number of mantissa digits of
+            base RADIX. Defaults to 53.
+          </li>
+          <li>
+            <span>MAX: </span> It holds largest possible integer in a
+            double-precision floating point number and it defaults to
+            1.7976931348623157e+308.
+          </li>
+          <li>
+            <span>MAX_10_EXP: </span> It represent the largest positive exponent
+            in a double-precision floating point where 10 raised to this power
+            minus 1. Defaults to 308.
+          </li>
+          <li>
+            <span>MAX_EXP: </span> It is the largest possible exponent value in
+            a double-precision floating point which defaults to 1024.
+          </li>
+          <li>
+            <span>MIN: </span> It is the smallest positive normalized number in
+            a double-precision floating point. Defaults to
+            2.2250738585072014e-308.
+          </li>
+          <li>
+            <span>MIN_10_EXP: </span> It is the smallest negative exponent in a
+            double-precision floating point where 10 raised to this power minus
+            1. Defaults to -307.
+          </li>
+          <li>
+            <span>MIN_EXP: </span> It is the smallest possible exponent value in
+            a double-precision floating point. Defaults to -1021
+          </li>
+          <li>
+            <span>RADIX: </span> The radix of floating-point representations or
+            in other words, it is a base of floating-point numbers. Defaults to
+            2 on most systems, which would represent a base-10 decimal
+          </li>
+          <li>
+            <span>ROUND: </span> It represents the rounding mode for
+            floating-point operations. The values includes are: -1: if the mode
+            is indeterminate 0: if rounding towards zero 1: if the rounding is
+            nearest to representable value 2: if rounding is towards +infinite
+            3: if rounding is towards +infinite
+          </li>
+          <li>
+            <span>NaN: </span>It is an expression representing a value which is
+            “not a number“.
+          </li>
+          <li>
+            <span>INFINITY: </span> It is an expression representing positive
+            infinity.
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

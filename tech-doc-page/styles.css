@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+}
+nav {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: fixed;
+  height: 100%;
+  width: 25%;
+}
+nav a:nth-child(2) { border-top: 1px solid; }
+nav header {
+  color: blueviolet;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+nav a {
+  border-bottom: 1px solid;
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: blueviolet;
+  color: white;
+}
+main {
+  float: right;
+  width: 75%;
+}
+.main-section {
+  padding: 1rem;
+}
+section header {
+  color: blueviolet;
+  font-size: 1.5rem;
+}
+.main-section ul {
+  list-style: none;
+}
+.main-section ul li {
+  padding: 2rem 0.3rem;
+}
+span {
+  color: #c2a4de;
+}
+@media only screen and (max-width: 816px) {
+  nav {
+    position: static;
+    text-align: center;
+    width: 100%;
+  }
+  main {
+    float: none;
+    width: 100%;
+  }
+}
